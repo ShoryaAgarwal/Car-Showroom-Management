@@ -1,0 +1,35 @@
+List Box(Action Performed)
+
+int v = LB1.getSelectedIndex();
+switch(v)
+{  case 0 : TSP3.setText("LIGHTING DESIGN"+"\n"+"COUPE CLASSIC"+"\n"+"POWER TO SPARE"+"\n"+"AGILE HANDLING");
+                 l63.setIcon(new ImageIcon("")); 
+	t17.setText("BM01");
+   break;
+  case 1 : TSP3.setText("BMW TOUCH COMMAND"+"\n"+"REMOTE CONTROL PARKING"+"\n"+"BMW LASERLIGHT"+"\n"+"BMW DISPLAY KEY"+"\n"+"ADAPTIVE MODE"+"\n"+"TELEPHONY WITH WIRELESS CHARGING");
+                 l63.setIcon(new ImageIcon(""));
+	t17.setText("BM02");
+   break;
+  case 2 : TSP3.setText("BMW LASERLIGHT"+"\n"+"MOTORSPORT MUSCLE"+"\n"+"MANEUVERING MASTERPIECE"+"\n"+"STOPPING POWER"+"\n"+"UNPRECEDENTED SOPHISTICATION AND SPORT");
+                 l63.setIcon(new ImageIcon(""));
+	t17.setText("BM03");
+   break;
+  case 3 : TSP3.setText("SPECTACULAR SILHOUTTE"+"\n"+"BMW TOUCH COMMAND"+"\n"+"AGILE HANDLING"+"\n"+"STOPPING POWER"+"\n"+"EUVERING MASTERPIECE"+"\n"+"MOTORSPORT MUSCLE");
+                 l63.setIcon(new ImageIcon(""));
+	t17.setText("BM04");
+   break;
+  case 4 : TSP3.setText("BMW LIFEDRIVE"+"\n"+"TRIMMED TO IMPRESS"+"\n"+"SPORTY MEETS COMFY"+"\n"+"FULL POWER"+"\n"+''DRIVE DYNAMIC'');
+                 l63.setIcon(new ImageIcon(""));
+	t17.setText("BM05");}
+
+
+
+Proceed to Payment(Button)
+
+PaymentFrame.setVisible(true);
+
+
+
+Back(Button)
+
+CarsFrame.setVisible(true);

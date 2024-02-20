@@ -1,0 +1,22 @@
+Click Here To Register(Button)
+
+String c = t2.getText();
+String d = t3.getText();
+String f = t4.getText();
+String g = t5.getText();
+String h = new String(pf2.getPassword());
+long i = Long.parseLong(t6.getText());
+if(rb1.isSelected())
+{JOptionPane.showMessageDialog(null,"Your name is  "+c+" "+d+" "+f+ "and you are male with contact"+i+".");
+JOptionPane.showMessageDialog(null,"Your ID is"+g+"and password is"+h+".");
+JOptionPane.showMessageDialog(null,"You are successfully register in.");}
+if(rb2.isSelected())
+{JOptionPane.showMessageDialog(null,"Your name is  "+c+" "+d+" "+f+ "and you are female with contact"+i+".");
+JOptionPane.showMessageDialog(null,"Your ID is"+g+"and password is"+h+".");
+JOptionPane.showMessageDialog(null,"You are successfully register in.");}
+
+
+
+Back(Button)
+
+LoginFrame.setVisible(true);

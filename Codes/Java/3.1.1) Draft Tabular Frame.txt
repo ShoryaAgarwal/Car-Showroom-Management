@@ -1,0 +1,26 @@
+Show All Data(Button)
+
+DefaultTableModel model = (DefaultTableModel)tb1.getModel();
+try{
+Class.forName("java.sql.Driver");
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost/s","root","shorya");
+Statement stmt = con.createStatement();
+String query = "SELECT * FROM Draft ;";
+ResultSet rs = stmt.executeQuery(query);
+while (rs.next()){
+String ag = rs.getString("DID");
+String ah = rs.getString("DSD");
+String ai = rs.getString("DED");
+String aj = rs.getString("NSC");
+String ak = rs.getString("Price");
+model.addRow( new Object[] {ag,ah,ai,aj,ak});}
+rs.close();
+stmt.close();
+con.close();}
+catch(Exception e){JOptionPane.showMessageDialog(null,"Error occured. Try again.");}
+
+
+
+Back(Button)
+
+MainMenuFrame.setVisible(true);

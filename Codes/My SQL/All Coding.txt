@@ -1,0 +1,86 @@
+create database s;
+
+use s;
+
+create table Draft
+(DID integer(5) Primary Key,
+DSD date,
+DED date,
+NCS integer(5),
+Price integer(10));
+
+insert into Draft values
+(2010,"2010-01-01","2010-12-31",8,45700000),
+(2011,"2011-01-01","2011-12-31",13,97080000),
+(2012,"2012-01-01","2012-12-31",6,21950000),
+(2013,"2013-01-01","2013-12-31",15,68000000),
+(2014,"2014-01-01","2014-12-31",24,79570000),
+(2015,"2015-01-01","2015-12-31",26,65240000),
+(2016,"2016-01-01","2016-12-31",22,54200000),
+(2017,"2017-01-01","2017-12-31",19,48650000),
+(2018,"2018-01-01","2018-12-31",25,94850000),
+(2019,"2019-01-01","2019-12-31",30,105000000);
+
+select * from Draft;
+
+create table Customer
+(CID integer(5),
+CName varchar(50),
+CPhone integer(10),
+NOV integer(5),
+NCS integer(5),
+Primary Key(CID, CPhone));
+
+insert into Customer values
+(101,"Shorya Agarwal",770181808,5,5),
+(102,"Sachin Agarwal",770181009,5,3),
+(103,"Shorya Kumar",759181809,2,3),
+(104,"Manish Agarwal",774519909,8,6),
+(105,"Harsh Jha",985475508,1,2),
+(106,"Shorya Singh",775680089,8,4),
+(107,"Sahil Agarwal",968008089,5,6),
+(108,"Amit Kumar",850818089,8,5),
+(109,"Alok Singh",654818089,5,8),
+(110,"Hashit Verma",920181808,5,2),
+(111,"Osho Agarwal",963181809,2,7),
+(112,"Harshit Kumar",985181089,5,7),
+(113,"Osho Singh",792101809,7,5),
+(114,"A.P Agarwal",985201089,5,5),
+(115,"O.P Sharma",770631089,5,6),
+(116,"Kumar Singh",754218089,5,5),
+(117,"Amit Sharma",772118089,9,5),
+(118,"Sarthak Kumar",985318089,5,4),
+(119,"Sarthak Garg",652018089,5,5),
+(120,"Ayush Khan",955818089,6,5),
+(121,"Harshit Sharma",998881808,5,2),
+(122,"R.K Gupta",987581808,5,5),
+(123,"Nikhil Gupta",965281089,6,5),
+(124,"Ashwani Kumar",770818980,5,5),
+(125,"Pant Agarwal",770118320,5,7),
+(126,"Harshit Choudhary",770181478,5,5),
+(127,"Ayushmaan Singh",770185848,7,5),
+(128,"Jivesh Kumar",770180009,5,7),
+(129,"Archit Garg",770180239,5,5),
+(130,"Sindhu Mangal",770185689,6,5),
+(131,"Kumar Rao",770102589,5,5),
+(132,"Vedant Shukla",770184089,9,7),
+(133,"Ritesh Agarwal",771816320,6,5),
+(134,"Ritesh Shukla",771818547,5,8),
+(135,"Anand Agarwal",770158089,5,5),
+(136,"Amit Agarwal",770564089,7,5),
+(137,"Anand Singh",772014808,5,6),
+(138,"Anand Kumar",770178889,5,1),
+(139,"Sarthak Agarwal",770168089,8,5),
+(140,"Shorya Choudhary",702010890,5,4),
+(141,"Prince Yadav",770115647,9,9),
+(142,"Prince Kumar",961818089,6,5),
+(143,"Manish Maurya",701820150,3,5),
+(144,"Jatin Yadav",771818089,5,5),
+(145,"Manish Yadav",921065689,5,3),
+(146,"Osho Yadav",865423010,5,8),
+(147,"Rishabh Yadav",921221008,7,5),
+(148,"Tushar Singh",952046201,6,8),
+(149,"Navneet Choudhary",963504852,8,5),
+(150,"Kshitij Agarwal",912102089,15,20);
+
+select * from Customer;

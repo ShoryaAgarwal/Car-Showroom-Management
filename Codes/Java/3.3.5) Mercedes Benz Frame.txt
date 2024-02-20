@@ -1,0 +1,35 @@
+List Box(Action Performed)
+
+int w = LB5.getSelectedIndex();
+switch(w)
+{  case 0 : TSP7.setText("Spaciousness and robustness"+"\n"+"Durable and practical SUV"+"\n"+"SUV genes skilfully brought to the fore"+"\n"+"High-quality finish and very spacious");
+                 l87.setIcon(new ImageIcon(""));
+	t21.setText("MB01");
+   break;
+  case 1 : TSP7.setText("Panoramic cockpit"+"\n"+"Wider range of gears"+"\n"+"Helpful connections"+"\n"+"More spacious More special");
+                 l87.setIcon(new ImageIcon(""));
+	t21.setText("MB02");
+   break;
+  case 2 : TSP7.setText("Athletic front"+"\n"+"Muscular rear"+"\n"+"Dynamic silhouette"+"\n"+"Sporty cockpit");
+                 l87.setIcon(new ImageIcon(""));
+	t21.setText("MB03");
+   break;
+  case 3 : TSP7.setText("Pioneer of the new design idiom"+"\n"+"Grille contour "+"\n"+"Forward-slanting front section"+"\n"+"Acoustic comfort");
+                 l87.setIcon(new ImageIcon(""));
+	t21.setText("MB04");
+   break;
+  case 4 : TSP7.setText("LED lighting and aggressive stance"+"\n"+"Multibeam LED headlamps"+"\n"+"64 - Colour ambient cabin lighting"+"\n"+"High-resolution displays");
+                 l87.setIcon(new ImageIcon(""));
+	t21.setText("MB05");}
+
+
+
+Proceed to Payment(Button)
+
+PaymentFrame.setVisible(true);
+
+
+
+Back(Button)
+
+CarsFrame.setVisible(true);

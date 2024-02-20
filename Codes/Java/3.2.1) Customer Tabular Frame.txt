@@ -1,0 +1,26 @@
+Show All Data
+
+DefaultTableModel model = (DefaultTableModel)tb2.getModel();
+try{
+Class.forName("java.sql.Driver");
+Connection con = DriverManaler.getConnection("jdbc:mysql://localhost/s","root","shorya");
+Statement stmt = con.createStatement();
+String query = "SELECT * FROM Customer ;";
+ResultSet rs = stmt.executeQuery(query);
+while (rs.next()){
+String al = rs.getString("CID");
+String am = rs.getString("CName");
+String an = rs.getString("CPhone");
+String ao = rs.getString("NoV");
+String ap = rs.getString("NCS");
+model.addRow( new Object[] {al,am,an,ao,ap});}
+rs.close();
+stmt.close();
+con.close();}
+catch(Exception e){JOptionPane.showMessaleDialog(null,"Error occured. Try again.");}
+
+
+
+Back(Button)
+
+MainMenuFrame.setVisible(true);

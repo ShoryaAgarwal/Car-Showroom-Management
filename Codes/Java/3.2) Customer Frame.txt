@@ -1,0 +1,68 @@
+Load(Button)
+
+try{
+Class.forName("java.sql.Driver");
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost/s","root","shorya");
+Statement stmt = con.createStatement();
+String query = "SELECT * FROM Customer WHERE CID =" + t12.getText()+";";
+ResultSet rs = stmt.executeQuery(query);
+if (rs.next())
+{String p = rs.getString("CID");
+String q = rs.getString("CName");
+String r = rs.getString("CPhone");
+String s = rs.getString("NoV");
+String t = rs.getString("NCS");
+t13.setText(q);
+t14.setText(r);
+t15.setText(s);
+t16.setText(t);}
+else{JOptionPane.showMessageDialog(null,"No such record found.");
+t12.setText("");
+t13.setText("");
+t14.setText("");
+t15.setText("");
+t16.setText("");}}
+catch(Exception e){JOptionPane.showMessageDialog(null,"Error occured. Try again.");}
+
+
+
+Update(Button)
+
+int u = JOptionPane.showConfirmDialog(null,"Surely wanna update the record?");
+if (u == JOptionPane.YES_OPTION){
+try{
+Statement stmt = con.createStatement();
+String query = "UPDATE Customer SET NoV = '"+t15.getText()+"', NCS = '"+t16.getText()+"' WHERE CID = "+t12.getText()+";";
+stmt.executeUpdate(query);
+JOptionPane.showMessageDialog(null,"Record successfully updated.");}
+catch(Exception e){JOptionPane.showMessageDialog(null,"Error in updation.");
+t12.setText("");
+t13.setText("");
+t14.setText("");
+t15.setText("");
+t16.setText("");}}
+
+
+
+Insert New Data(Button)
+
+try{
+Class.forName("java.sql.Driver");
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost/s","root","shorya");
+String query = "INSERT INTO Customer VALUES("+t12.getText()+"'"+t13.getText()+"'"+"'"+t14.getText()+"'"+"'"+t15.getText()+"'"+"'"+t16.getText()+"'"+");";
+Statement stmt = con.createStatement();
+ResultSet rs = stmt.executeUpdate(query);}
+catch(Exception e)
+{JOptionPane.showMessageDialog(null,"Error in insertion.");}
+
+
+
+Tabular Form(Button)
+
+CustomerTabularFrame.setVisible(true);
+
+
+
+Back(Button)
+
+MainMenuFrame.setVisible(true);

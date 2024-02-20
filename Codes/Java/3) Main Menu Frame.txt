@@ -1,0 +1,47 @@
+About Us(Button)
+
+{AboutUsFrame.setVisible(true);
+TSP1.setText("SMH AutoWheels Motors Limited is a Indian multinational automotive company headquartered in Mumbai, Maharashtra, India is a USD 100 billion organisation with portfolio that covers wide range of comfortable, luxurious and most valuable cars in the world. We has also our plants in New Delhi, Uttar Pradesh, Rajasthan, Tamil Nadu as well as in Argentina, South Africa, Thaliand, United States Of America. SMH AutoWheels Motors Limited was established in year 1945. Our dealership with the headquartered company has completed 10 years of faithfull services. Here in the SMH AutoWheels Motors, we have a dealership contract with an top best five automaker companies."+"\n"+
+"These are"+"\n"+
+"1. BMW Group"+"\n"+
+"2. Buick"+"\n"+
+"3. Cadillac"+"\n"+
+"4. Lamborghini"+"\n"+
+"5. Mercedes Benz"+"\n"+
+"In the SMH AutoWheels Motors, we make the dream true of the customer by our best features and exellence in the services in all our customise cars, providing best safety features along top class luxury equipment so that customer comes again and again to SMH AutoWheels Motors for purchasing more number of  cars.");
+TSP1.setEditable(false);}
+
+
+Features(Button)
+
+{FeaturesFrame.setVisible(true);
+TSP2.setText("Irrespective of the car you buy, all our cars have all the features that have become absolutely essential in today’s life. Here we listed them out as following:"+"\n"+"\n"+
+"1. Dual Front Airbags - Safety Feature"+"\n"+
+"Airbags are a life-saving feature in the event of an accident. They act as a cushion for the driver and the passenger in case of a impact. We think it’s a feature that every car, irrespective of its segment or price, should have as standard."+"\n"+"\n"+
+"2. Anti-lock Braking System - Safety Feature"+"\n"+
+"ABS (anti-lock braking system) is an active safety feature. An active safety feature is one that helps avoid accidents. ABS modulates the pressure on brakes to prevent them from locking up in a panic braking situation. Since it doesn’t allow wheels to lock up, the vehicle can be steered under hard braking. It also helps reduce the braking distance."+"\n"+"\n"+
+"3. ISOFIX Mounts - Safety feature"+"\n"+
+"If you are a parent, this is a must-have. Most cars these days are equipped with Isofix mounts on the second row to fix child safety seats. For cars with front airbags, it’s advised not to seat children on the front seat as it can be dangerous in case the airbag deploys in the event of a crash. A child seat can be fixed on these Isofix mounts safely in the second row and that might save the child’s life in an unfortunate case of a crash."+"\n"+"\n"+
+"4. Rear Defogger - Safety feature / Convenience feature"+"\n"+
+"During the monsoon, or even in winters, the rear windshield tends to fog up, which hinders visibility of the traffic or the surroundings behind. A defogger clears the mist and helps improve rear visibility."+"\n"+"\n"+
+"5. Electrically Adjustable ORVM - Convenience feature"+"\n"+
+"If you’re the only one driving your car, you might not feel the need to regularly adjust the ORVM unless when you’re reversing into a tight spot or parking close to a wall. If the car is driven by more than one person, the ORVMs may require more frequent adjustment to suit each driver. ");
+TSP2.setEditable(false);}
+
+
+
+Cars(Button)
+
+CarsFrame.setVisible(true);
+
+
+
+Customer Details(Button)
+
+CustomerDetailsFrame.setVisible(true);
+
+
+
+Draft(Button)
+
+DraftFrame.setVisible(true);

@@ -1,0 +1,35 @@
+List Box(Action Performed)
+
+int y = LB3.getSelectedIndex();
+switch(y)
+{  case 0 : TSP5.setText("THUNDEROUS PERFORMANCE"+"\n"+"LIGHTNING FAST REFLEXES"+"\n"+"BRILLIANT BRAKING"+"\n"+"MAGNETIC RIDE CONTROL"+"\n"+"RACING-INSPIRED COOLING SYSTEMS");
+                 l75.setIcon(new ImageIcon(""));
+	t19.setText("CA01");
+   break;
+  case 1 : TSP5.setText("EXHILARATING PERFORMANCE"+"\n"+"ULTIMATE PRECISION AND CONTROL"+"\n"+"BREMBO HIGH-PERFORMANCE BRAKES"+"\n"+"MICHELIN PILOT SUPER SPORT TIRES");
+                 l75.setIcon(new ImageIcon(""));
+	t19.setText("CA02");
+   break;
+  case 2 : TSP5.setText("SLICE THROUGH DESIGN"+"\n"+"FIRST-CLASS COMFORT FOR ALL"+"\n"+"ROTARY CONTROLLER"+"\n"+"INSTRUMENT PANEL DEDICATED CONTROLS"+"\n"+"AVAILABLE HEAD-UP DISPLAY"+"\n"+"AVAILABLE HANDS-FREE LIFTGATE");
+                 l75.setIcon(new ImageIcon(""));
+	t19.setText("CA03");
+   break;
+  case 3 : TSP5.setText("16-SPEAKER BOSE CENTERPOINT SYSTEM"+"\n"+"INVISIBLE REAR WIPER"+"\n"+"CONCIERGE LIGHTING"+"\n"+"POWER ASSIST STEPS"+"\n"+"HANDS-FREE LIFTGATE");
+                 l75.setIcon(new ImageIcon(""));
+	t19.setText("CA04");
+   break;
+  case 4 : TSP5.setText("TECH TO TAKE YOUR HANDS AND BREATH AWAY"+"\n"+"ATHLETICALLY INCLINED"+"\n"+"TRULY HANDS-FREE DRIVING TECHNOLOGY"+"\n"+"SURROUND WITH SAFETY FEATURES"+"\n"+"MASTER IN COMMAND");
+                 l75.setIcon(new ImageIcon(""));
+	t19.setText("CA05");}
+
+
+
+Proceed to Payment(Button)
+
+PaymentFrame.setVisible(true);
+
+
+
+Back(Button)
+
+CarsFrame.setVisible(true);

@@ -1,0 +1,103 @@
+Proceed to Pay(Button)
+
+int aa = Integer.parseInt(t22.getText());
+int ab = Integer.parseInt(t23.getText());
+String ac = t24.getText();
+long ae = Long.parseLong(t26.getText());
+long af;
+if(rb8.isSelected())
+af = ae *90/100;
+t27.setText(""+af);
+if(rb9.isSelected())
+af =  ae;
+t27.setText(""+af); 
+{JOptionPane.showMessageDialog(null,"Your total payable amount is rupees"+af+".");
+JOptionPane.showMessageDialog(null,"Thanks for shopping.");
+JOptionPane.showMessageDialog(null,"Your dream car will be at your doorstep very soon.");}
+
+
+
+ComboBox(Action Performed)
+
+int ad = CB1.getSelectedIndex();
+switch(ad)
+{ case 0: t25.setText("BMW 4 Series");
+                t26.setText("5500000");
+break;
+case 1: t25.setText("BMW 7 Series");
+            t26.setText("13500000");
+break;
+case 2: t25.setText("BMW 8 Series");
+            t26.setText("8500000");
+break;
+case 3: t25.setText("BMW X2");
+            t26.setText("7000000");
+break;
+case 4: t25.setText("BMW I8");
+            t26.setText("33000000");
+break;
+case 5: t25.setText("Buick LaCrosse");
+            t26.setText("2100000");
+break;
+case 6: t25.setText("Buick Regal GS");
+            t26.setText("3000000");
+break;
+case 7: t25.setText("Buick Regal Sportback");
+            t26.setText("1900000");
+break;
+case 8: t25.setText("Buick Regal Tour X");
+            t26.setText("2010000");
+break;
+case 9: t25.setText("Buick Enclave");
+            t26.setText("2900000");
+break;
+case 10: t25.setText("Cadillac ATS-V");
+            t26.setText("4600000");
+break;
+case 11: t25.setText("Cadillac CT6");
+            t26.setText("4030000");
+break;
+case 12: t25.setText("Cadillac CTS-V");
+            t26.setText("6000000");
+break;
+case 13: t25.setText("Cadillac Escalade");
+            t26.setText("7500000");
+break;
+case 14: t25.setText("Cadillac XT-4");
+            t26.setText("3600000");
+break;
+case 15: t25.setText("Lamborghini Aventador");
+            t26.setText("50100000");
+break;
+case 16: t25.setText("Lamborghini Huracan");
+            t26.setText("40700000");
+break;
+case 17: t25.setText("Lamborghini Centenario");
+            t26.setText("40000000");
+break;
+case 18: t25.setText("Lamborghini Urus");
+            t26.setText("30000000");
+break;
+case 19: t25.setText("Lamborghini Veneno");
+            t26.setText("280000000");
+break;
+case 20: t25.setText("Mercedes Benz GLB");
+            t26.setText("4000000");
+break;
+case 21: t25.setText("Mercedes Benz G Class");
+            t26.setText("20000000");
+break;
+case 22: t25.setText("Mercedes Benz AMG GT");
+            t26.setText("24500000");
+break;
+case 23: t25.setText("Mercedes Benz CLS");
+            t26.setText("9500000");
+break;
+case 24: t25.setText("Mercedes Benz A Class Sedan");
+            t26.setText("3500000");}
+
+
+
+Next(Button)
+
+ExitFrame.setVisible(true);

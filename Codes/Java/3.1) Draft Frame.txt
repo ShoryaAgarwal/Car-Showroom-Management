@@ -1,0 +1,68 @@
+Load(Button)
+
+try{
+Class.forName("java.sql.Driver");
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost/s","root","shorya");
+Statement stmt = con.createStatement();
+String query = "SELECT * FROM Draft WHERE DID =" + t7.getText()+";";
+ResultSet rs = stmt.executeQuery(query);
+if (rs.next())
+{String j = rs.getString("DID");
+String k = rs.getString("DSD");
+String l = rs.getString("DED");
+String m = rs.getString("NSC");
+String n = rs.getString("Price");
+t8.setText(k);
+t9.setText(l);
+t10.setText(m);
+t11.setText(n);}
+else{JOptionPane.showMessageDialog(null,"No such record found.");
+t7.setText("");
+t8.setText("");
+t9.setText("");
+t10.setText("");
+t11.setText("");}}
+catch(Exception e){JOptionPane.showMessageDialog(null,"Error occured. Try again.");}
+
+
+
+Update(Button)
+
+int o = JOptionPane.showConfirmDialog(null,"Surely wanna update the record?");
+if (o == JOptionPane.YES_OPTION){
+try{
+Statement stmt = con.createStatement();
+String query = "UPDATE Draft SET NCS = '"+t10.getText()+"', Price = '"+t11.getText()+"' WHERE DID = "+t7.getText()+";";
+stmt.executeUpdate(query);
+JOptionPane.showMessageDialog(null,"Record successfully updated.");}
+catch(Exception e){JOptionPane.showMessageDialog(null,"Error in updation.");
+t7.setText("");
+t8.setText("");
+t9.setText("");
+t10.setText("");
+t11.setText("");}}
+
+
+
+Insert New Data(Button)
+
+try{
+Class.forName("java.sql.Driver");
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost/s","root","shorya");
+String query = "INSERT INTO Draft VALUES("+t7.getText()+"'"+t8.getText()+"'"+"'"+t9.getText()+"'"+"'"+t10.getText()+"'"+"'"+t11.getText()+"'"+");";
+Statement stmt = con.createStatement();
+ResultSet rs = stmt.executeUpdate(query);}
+catch(Exception e)
+{JOptionPane.showMessageDialog(null,"Error in insertion.");}
+
+
+
+Tabular Form(Button)
+
+DraftTabularFormFrame.setVisible(true);
+
+
+
+Back(Button)
+
+MainMenuFrame.setVisible(true);

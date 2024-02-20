@@ -1,0 +1,30 @@
+Next(Button)
+
+if(rb3.isSelected())
+{JOptionPane.showMessageDialog(null,"You have selected BMW Group.");
+BMWGroupFrame.setVisible(true);}
+else
+if(rb4.isSelected())
+{JOptionPane.showMessageDialog(null,"You have selected Buick.");
+BuickFrame.setVisible(true);}
+else
+if(rb5.isSelected())
+{JOptionPane.showMessageDialog(null,"You have selected Cadillac.");
+CadillacFrame.setVisible(true);}
+else
+if(rb6.isSelected())
+{JOptionPane.showMessageDialog(null,"You have selected Lamborghini.");
+LamborghiniFrame.setVisible(true);}
+else
+if(rb7.isSelected())
+{JOptionPane.showMessageDialog(null,"You have selected Mercedes Benz.");
+MercedesBenzFrame.setVisible(true);}
+else
+JOptionPane.showMessageDialog(null,"You have not selected any automaker. Please select the automaker first to proceed on.");
+buttonGroup4.clearSelection();
+
+
+
+Back(Button)
+
+MainMenuFrame.setVisible(true);

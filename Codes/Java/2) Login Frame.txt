@@ -1,0 +1,19 @@
+Login(Button)
+
+String a = t1.getText();
+String b = new String(pf1.getPassword());
+if (a.equals("Shorya Agarwal"))
+{if (b.equals("SMH AutoWheels@#01"))
+{}
+JOptionPane.showMessageDialog(null,"You are authenticated person to come in. Welcome to the SMH AutoWheels Motors Limited.");
+MainMenuFrame.setVisible(true);}
+else
+{JOptionPane.showMessageDialog(null,"You aren't authenticated person to come in. Please try again with corrected one.");
+t1.setText("");
+pf1.setText("");}
+
+
+
+Register(Button)
+
+RegisterFrame.setVisible(true);

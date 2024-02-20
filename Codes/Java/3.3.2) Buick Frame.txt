@@ -1,0 +1,35 @@
+List Box(Action Performed)
+
+int x = LB2.getSelectedIndex();
+switch(x)
+{  case 0 : TSP4.setText("DISTINGUISHED EXTERIOR"+"\n"+"UNIQUE WHEELS"+"\n"+"EXCLUSIVE AVENIR GRILLE"+"\n"+"ELEVATED INTERIOR"+"\n"+"SMOOTH PERFORMANCE"+"\n"+"INSPIRED AMENITIES"+"\n"+"PREMIUM MATERIALS"+"\n"+"PREMIUM MATERIALS");
+                 l69.setIcon(new ImageIcon(""));
+	t18.setText("BU01");
+   break;
+  case 1 : TSP4.setText("INTERACTIVE DRIVE CONTROL"+"\n"+"3.6L V6 ENGINE"+"\n"+"FRONT-PERFORMANCE SEATS"+"\n"+"SPORTBACK OPENING"+"\n"+"INTELLIGENT ALL-WHEEL DRIVE"+"\n"+"RECONFIGURABLE PERFORMANCE CLUSTER"+"\n"+"DRIVER-CENTRIC TECHNOLOGY"+"\n"+"BREMBO BRAKES");
+                 l69.setIcon(new ImageIcon(""));
+	t18.setText("BU02");
+   break;
+  case 2 : TSP4.setText("SPORTBACK OPENING"+"\n"+"LED HEADLAMPS"+"\n"+"POWER MOONROOF"+"\n"+"DISTINCTIVE STYLING"+"\n"+"UNIQUE WHEEL DESIGNS");
+                 l69.setIcon(new ImageIcon(""));
+	t18.setText("BU03");
+   break;
+  case 3 : TSP4.setText("INTELLIGENT ALL-WHEEL DRIVE"+"\n"+"2.0L TURBO ENGINE"+"\n"+"FIVE-LINK REAR SUSPENSION"+"\n"+"8-SPEED AUTOMATIC TRANSMISSION"+"\n"+"STABILITRAK");
+                 l69.setIcon(new ImageIcon(""));
+	t18.setText("BU04");
+   break;
+  case 4 : TSP4.setText("SIGNATURE GRILLE"+"\n"+"CAPTIVATING WHEELS"+"\n"+"THREE ROWS OF LUXURY SEATING"+"\n"+"WOOD-TONED ACCENTS"+"\n"+"PREMIUM MATERIALS"+"\n"+"WIRELESS CHARGING"+"\n"+"AVENIR SIGNATURE"+"\n"+"ADVANCED SUSPENSION");
+                 l69.setIcon(new ImageIcon(""));
+	t18.setText("BU05");}
+
+
+
+Proceed to Payment(Button)
+
+PaymentFrame.setVisible(true);
+
+
+
+Back(Button)
+
+CarsFrame.setVisible(true);

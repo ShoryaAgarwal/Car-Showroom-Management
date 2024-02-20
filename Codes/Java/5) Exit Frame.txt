@@ -1,0 +1,10 @@
+Exit(Button)
+
+{JOptionPane.showMessageDialog(null,"THANKS FOR VISITING SMH AUTOWHEELS MOTORS LIMITED. HOPE YOU ENJOYED OUR SERVICES.");
+System.exit(0);}
+
+
+
+Back to Main Menu
+
+MainMenuFrame.setVisible(true); 

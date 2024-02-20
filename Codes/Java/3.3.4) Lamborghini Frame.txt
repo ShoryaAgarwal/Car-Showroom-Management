@@ -1,0 +1,36 @@
+List Box(Action Performed)
+
+int z = LB4.getSelectedIndex();
+switch(z)
+{  case 0 : TSP6.setText("Forget the idea of performance you are used to. The Aventador Coupé has been engineered to revolutionize this concept and establish a new benchmark in the segment of super sports cars and beyond. This car aims to bring the future forward. This is a true supercar legend in the making, which combines the tradition of the Lamborghini brand with a level of innovation which takes the House of the Raging Bull to hitherto unexplored territory.");
+                 l81.setIcon(new ImageIcon(""));
+	t20.setText("LM01");
+   break;
+  case 1 : TSP6.setText("The Huracán Performante has decided to lower its roof and transform itself into the Spyder with the highest performance that the Huracán family has ever seen. Its lines are designed to thrill at first sight and its state-of-the-art technology has been developed to provide a one-of-a-kind driving experience. Weighing in at 35 kg less than the Huracán 4WD Spyder and with 30 HP more, this newest addition to the House of the Raging Bull vaunts the best power-to-weight ratio in the Huracán Spyder range. It uses Forged Composites® material and the new ALA (Lamborghini Active Aerodynamics) technology. The Huracán Performante Spyder: power has become breathtakingly beautiful.");
+                 l81.setIcon(new ImageIcon(""));
+	t20.setText("LM02");
+   break;
+  case 2 : TSP6.setText("Lamborghini unveiled the open air version of the latest Few-off creation to fervent collectors and enthusiasts at Monterey Car Week in California. A performance driven model, this one-off open-top model is built on a carbon fiber monocoque frame with bodywork also in carbon fiber. The highly responsive V12 engine delivers 770 hp (566 kW) with maximum engine revs increased from 8.350 to 8.600 rpm. Accelerating from 0-100 km/h in just 2.9 seconds the Centenario Roadster’s top speed is more than 350 km/h. Braking distance is equally impressive: from 100-0 km/h in just 31 m. The Centenario Roadster adopts Lamborghini new rear wheel steering. This system increases turning agility at low speed while increasing stability at high speed.");
+                 l81.setIcon(new ImageIcon(""));
+	t20.setText("LM03");
+   break;
+  case 3 : TSP6.setText("A super sports car soul and the functionality typical for an SUV: this is Lamborghini Urus, the world’s first Super Sport Utility Vehicle. Identifiable as an authentic Lamborghini with its unmistakable DNA, Urus is at the same time a groundbreaking car: the extreme proportions, the pure Lamborghini design and the outstanding performance make it absolutely unique. Urus’ distinctive silhouette with a dynamic flying coupé line shows its super sports origins, while its outstanding proportions convey strength, solidity and safety. Without a doubt the factors at the heart of Urus’ success are advanced design, extraordinary driving dynamics and thrilling performance. All these features allowed Lamborghini to launch a Super Sport Utility Vehicle remaining loyal to its DNA.
+Urus conveys its utmost versatility also in its design, which meets the requirements of a wide variety of customers with Style packages, exterior details in carbon fiber or the Off-Road package.");
+                 l81.setIcon(new ImageIcon(""));
+	t20.setText("LM04");
+   break;
+  case 4 : TSP6.setText("The Veneno is Lamborghini's interpretation of a racing prototype built for the road. The front of the car is designed for maximum airflow and for improved downforce. The redesigned front and rear arches direct air around the car in order to reduce excessive lift and aid in generating downforce. The smooth underbody ensures that the airflow is not interrupted. The large carbon-fibre rear wing connected to the car via an LMP1 style central fin is three-way adjustable. The wheels of the car (measuring 20-inch at the front and 21-inch at the rear) have a turbine-like design and direct air to cool the car's carbon ceramic braking system. The central-locking hubs on the wheels allow for easy installation and removal.");
+                 l81.setIcon(new ImageIcon(""));
+	t20.setText("LM05");}
+
+
+
+Proceed to Payment(Button)
+
+PaymentFrame.setVisible(true);
+
+
+
+Back(Button)
+
+CarsFrame.setVisible(true);
